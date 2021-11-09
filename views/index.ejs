@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yo.</title>
+    <link href="https://cdn.statically.io/gh/ayshptk/html.css/main/flavor/pink.min.css" rel="stylesheet" >
+</head>
+<body>
+    <h1 > yo. </h1>
+    <p>a dumb app to send yo-s. don't ask me why I made this.</p>
+    <form action="/yo" method="POST">
+        <input type="text" placeholder="name" name="name">
+        <input type="text" placeholder="quote" name="quote">
+        <button type="submit">submit</button>
+      </form>
+      <h2> yos </h2>
+
+<ul class="yos">
+  <!-- Loop through yos -->
+  <% for(var i = 0; i < yos.length; i++) {%>
+    <li class="quote">
+      <!-- Output name from the iterated quote object -->
+      <span><%= yos[i].name %></span>:
+      <!-- Output quote from the iterated quote object -->
+      <span><%= yos[i].quote %></span>
+    </li>
+  <% } %>
+</ul>
+</body>
+</html>
